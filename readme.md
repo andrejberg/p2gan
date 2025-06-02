@@ -1,5 +1,20 @@
 # P&sup2;-GAN Fast Style Transfer
 
+## Setup environment
+```bash
+conda create -n p2gan python=3.7 numpy=1.18.1
+conda activate p2gan
+conda install -c conda-forge cudatoolkit=10.0 cudnn=7.6.5
+pip install opencv-python==4.1.0.25
+pip install tensorflow-gpu==1.15
+pip install protobuf==3.20.3
+wget https://www.dropbox.com/s/8a8rei66f72um4i/vgg16.npy
+python -c "import numpy; print('NumPy:', numpy.__version__)"
+python -c "import cv2; print('OpenCV:', cv2.__version__)"
+python -c "import tensorflow as tf; print('TensorFlow:', tf.__version__)"
+
+```
+
 Code and pre-trained models for "[P&sup2;-GAN: Efficient Style Transfer Using Single Style Image](https://arxiv.org/abs/2001.07466)".
 
 ![front page image](https://github.com/i-evi/p2gan/raw/master/resources/front.png)
